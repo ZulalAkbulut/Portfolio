@@ -1,0 +1,42 @@
+[
+    {
+        "image": "html-css.jpg",
+        "title": "HTML - CSS"
+    },
+    {
+        "image": "js.jpg",
+        "title": "javascript"
+    },
+    {
+        "image": "react.jpg",
+        "title": "React"
+    },
+    {
+        "image": "vsCode.jpg",
+        "title": "Visuel Studio Code"
+    },
+    {
+        "image": "figma.png",
+        "title": "Figma (Lecture de maquettes)"
+    },
+    {
+        "image": "gestion-de-projet.png",
+        "title": "Gestion de projet"
+    },
+    {
+        "image": "docker.png",
+        "title": "Docker (Exécution des projets)"
+    },
+     {
+        "image": "cypress.png",
+        "title": "Cypress (E2E Testing)"
+    },
+    {
+        "image": "optimisation-et-debug.png",
+        "title": "Optimisation et debug"
+    },
+    {
+        "image": "test.png",
+        "title": "Test"
+    }
+]

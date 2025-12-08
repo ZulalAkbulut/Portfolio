@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riding Cities – Détail du projet</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" async>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Zulal</a>
+
+            <!-- Menu hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <a href="../index.html" class="retour">← Retour à l'accueil</a>
+                <!-- DARK MODE BUTTON -->
+                <button id="theme-toggle" class="theme-toggler" aria-label="Toggle dark mode">
+                    <!-- Icône lune -->
+                    <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+                    </svg>
+
+                    <!-- Icône soleil -->
+                    <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" />
+                        <path
+                            d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22"
+                            stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </button>
+
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="project-page">
+
+        <h1>Riding Cities – Intégration HTML / CSS</h1>
+
+        <p class="project-subtitle"><em>Création de sections HTML + intégration fidèle selon la maquette Figma</em></p>
+
+        <img class="project-cover" src="../images/riding1.png" alt="Riding Cities">
+
+        <h2>Objectif du projet</h2>
+        <p>
+            Le projet Riding Cities a pour objectif d’apprendre les bases de l’intégration HTML et CSS à partir d’une
+            maquette Figma.
+            J’ai dû analyser une structure HTML existante, créer une nouvelle section, modifier un bouton, ajouter une
+            deuxième
+            version de celui-ci, appliquer les classes CSS fournies
+            et intégrer les documents PDF de téléchargement.
+        </p>
+
+        <h2>Technologies utilisées</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3 (classes existantes, sans modification du fichier CSS)</li>
+            <li>Maquette Figma</li>
+            <li>Structure en colonnes</li>
+            <li>Attributs HTML (href, alt, src…)</li>
+        </ul>
+
+        <h2>Travail réalisé</h2>
+
+        <h3>Action 1 – Ajout du titre et de la couleur de fond</h3>
+        <p>
+            • Ajout du titre <strong>“Découvrez nos cours”</strong> en suivant la structure des autres sections.<br>
+            • Application de la classe CSS existante permettant un <strong>fond gris</strong>.<br>
+            • Respect de la hiérarchie H2/H3 déjà présente dans le site.<br>
+        </p>
+
+        <h3>Action 2 – Modification du bouton existant</h3>
+        <p>
+            • Application des classes CSS pour obtenir un bouton <strong>arrondi</strong>, <strong>coloré</strong> et
+            correspondant à la maquette.<br>
+            • Ajout d’un effet <strong>hover</strong> grâce aux classes CSS fournies.<br>
+            • Le bouton “Télécharger le planning de cours” a ainsi été modernisé.<br>
+        </p>
+
+        <h3>Action 3 – Ajout du deuxième bouton et mise en forme en colonne</h3>
+        <p>
+            • Duplication du premier bouton pour en créer un deuxième.<br>
+            • Modification de la classe du parent pour placer les deux boutons en <strong>colonne</strong>.<br>
+            • Mise à jour du texte :<br>
+            &nbsp;&nbsp;– “Planning enfants”<br>
+            &nbsp;&nbsp;– “Planning adultes”<br>
+            • Application des bonnes couleurs (une couleur par bouton).<br>
+        </p>
+
+        <h3>Action 4 – Rattachement des documents PDF</h3>
+        <p>
+            • Analyse du dossier “Documents”.<br>
+            • Attribution des bons fichiers PDF via l’attribut <code>href</code>.<br>
+            • Le premier bouton mène au PDF Enfants, le second au PDF Adultes.<br>
+            • Vérification du bon fonctionnement du téléchargement.<br>
+        </p>
+
+        <h2>Ce que j’ai appris</h2>
+        <p>
+            Ce projet m’a permis de :
+            <br>
+            • comprendre comment adapter un HTML existant à une nouvelle maquette ;<br>
+            • utiliser des classes CSS déjà créées sans modifier le fichier CSS ;<br>
+            • travailler la structure HTML en colonnes ;<br>
+            • intégrer correctement des images et leurs attributs alt ;<br>
+            • créer des liens de téléchargement fonctionnels ;<br>
+            • améliorer la cohérence visuelle avec Figma comme référence ;<br>
+            • appliquer des bonnes pratiques d’intégration front-end.
+        </p>
+        <div class="github-link">
+            <p>Voir le code source du projet sur <a href="https://github.com/ZulalAkbulut/RidingCities"
+                    target="_blank">GitHub</a></p>
+        </div>
+
+    </div>
+    <!-- load javascript after loading all html content -->
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

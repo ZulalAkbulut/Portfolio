@@ -1,0 +1,38 @@
+[
+  {
+    "image": "image1.png",
+    "title": "Booki – Site de réservation d’hébergements et d’activités",
+    "text": "Intégration complète d’un site de réservation en HTML/CSS à partir d’une maquette Figma, avec un design responsive, optimisation de la structure et respect strict du design system.",
+    "link": "projets/booki.html"
+  },
+  {
+    "image": "image2.png",
+    "title": "Eco Bliss Bath – QA Automation",
+    "text": "Mise en place de tests automatisés avec Cypress (API, smoke tests, XSS, scénarios critiques). Rédaction du plan de test et production d’un rapport professionnel, contribuant à la qualité et la stabilité de l’application.",
+    "link": "projets/ecoBlissBath.html"
+  },
+  {
+    "image": "print1.png",
+    "title": "Print It – Imprimerie familiale",
+    "text": "Votre partenaire pour tous vos travaux d’impression, des cartes de visite aux affiches personnalisées, avec un service rapide et de qualité.",
+    "link": "projets/printIt.html"
+  },
+  {
+    "image": "image3.png",
+    "title": "Kasa – Application de location d’appartements entre particuliers",
+    "text": "Refonte complète d’une application de location avec React. Création de composants réutilisables, intégration fidèle aux maquettes Figma, gestion des routes et carrousel d’images, tout en assurant un front-end moderne, maintenable et performant.",
+    "link": "projets/kasa.html"
+  },
+  {
+    "image": "menuMaker1.png",
+    "title": "Menu Maker – Plateforme de création de menus pour restaurateurs",
+    "text":  "Application web permettant aux restaurateurs de créer, personnaliser et exporter leurs menus en PDF grâce à une interface intuitive et un éditeur visuel complet.",
+    "link": "projets/menuMaker.html"
+  },
+  {
+    "image": "riding1.png",
+    "title": "Riding Cities – Promotion du skate",
+    "text": "Association sportive promouvant le skate en région, avec des cours pour enfants et adultes, et des événements communautaires.",
+    "link": "projets/ridingCities.html"
+  }
+]

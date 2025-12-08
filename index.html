@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Portfolio Name</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" async>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Zulal</a>
+
+            <!-- menu hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#about">A propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#certificats">Certificats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contactez-moi</a></li>
+                </ul>
+
+                <!-- DARK MODE BUTTON -->
+                <button id="theme-toggle" class="theme-toggler" aria-label="Toggle dark mode">
+                    <!-- Icône lune -->
+                    <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+                    </svg>
+
+                    <!-- Icône soleil -->
+                    <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" />
+                        <path
+                            d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22"
+                            stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </button>
+
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="stars"></div>
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="images/image.jpg" class="imageAboutPage" alt="Photo de profil" loading="lazy">
+            </div>
+            <div class="hero-text">
+                <h1 class="hero_title">
+                    Salut, moi c'est Zulal
+                </h1>
+                <p class="hero_desc">
+                    Testeuse logiciel passionnée par la qualité et la performance des applications.
+                </p>
+                <a href="data/cv.pdf" class="btn btn-primary mt-3" download>Télécharger mon CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h2 class="text-center">A propos</h2>
+            <div class="row mt-4">
+                <div class="col-lg-8">
+                    <h3>Mon parcours & expertise</h3>
+                    <p>
+                        Testeuse logiciel passionnée par l’assurance qualité et l’amélioration continue.
+                        Je suis formée aux tests fonctionnels — manuels, exploratoires et automatisés — ainsi
+                        qu’à la conception de plans de test, la rédaction de scénarios et l’analyse des résultats.
+                        J’utilise quotidiennement des outils tels que Jira, Postman, Cypress, Chrome Debugger
+                        et Git & GitHub pour assurer un suivi rigoureux et structuré des tests.
+
+                        Grâce à mes bases en HTML, CSS, JavaScript et React, je comprends plus facilement
+                        la logique des applications web et je peux analyser l’origine des anomalies de manière
+                        plus précise. Cette double compétence QA + Dev me permet de collaborer efficacement
+                        avec les équipes de développement et de contribuer à la qualité globale du produit.
+
+                    </p>
+
+                    <h3>Ce qui me passionne</h3>
+                    <p>
+                        Ce qui me motive le plus dans le métier de Testeuse Logiciel, c’est de garantir la
+                        fiabilité, la performance et la fluidité des applications. J’aime comprendre comment un
+                        produit fonctionne, détecter les anomalies, améliorer l’expérience utilisateur et trouver
+                        des solutions qui apportent une réelle valeur.
+
+                        Le travail en équipe, la communication avec les développeurs et la recherche de
+                        qualité continue font partie des aspects que j’apprécie particulièrement dans
+                        l’univers du testing.
+
+                    </p>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h2 class="text-center">Mes projets</h2>
+        </div>
+    </section>
+
+    <!-- skills section-->
+    <section id="skills">
+        <div class="container">
+            <h2 class="text-center">Mes compétences</h2>
+            <div class="skills-slider">
+            </div>
+        </div>
+    </section>
+
+    <!-- certificats section-->
+    <section id="certificats">
+        <div class="container">
+            <h2 class="text-center">Mes Certificats</h2>
+            <div class="certificats-slider">
+                <div class="certificate">
+                    <a href="data/cer1.pdf" target="_blank">
+                        <img src="images/cer1.png" alt="Certificat 1">
+                    </a>
+                    <p><a href="data/cer1.pdf" target="_blank">Voir le PDF</a></p>
+                </div>
+                <div class="certificate">
+                    <a href="data/cer2.pdf" target="_blank">
+                        <img src="images/cer2.png" alt="Certificat 1">
+                    </a>
+                    <p><a href="data/cer2.pdf" target="_blank">Voir le PDF</a></p>
+                </div>
+                <div class="certificate">
+                    <a href="data/cer3.pdf" target="_blank">
+                        <img src="images/cer3.png" alt="Certificat 1">
+                    </a>
+                    <p><a href="data/cer3.pdf" target="_blank">Voir le PDF</a></p>
+                </div>
+                <div class="certificate">
+                    <a href="data/cer4.pdf" target="_blank">
+                        <img src="images/cer4.png" alt="Certificat 1">
+                    </a>
+                    <p><a href="data/cer4.pdf" target="_blank">Voir le PDF</a></p>
+                </div>
+                <div class="certificate">
+                    <a href="data/istqb-foundation-level-_ctfl.pdf" target="_blank">
+                        <img src="images/cer6.png" alt="Certificat 1">
+                    </a>
+                    <p><a href="data/istqb-foundation-level-_ctfl.pdf" target="_blank">Voir le PDF</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h2 class="text-center">Contactez-moi</h2>
+            <div class="row">
+                <div class="col-lg-4 mt-4 contactColumn">
+                    <i class="fa-solid fa-phone fa-4x"></i>
+                    <h3>Téléphone</h3>
+                    <p>06-34-63-90-12</p>
+                </div>
+                <div class="col-lg-4 mt-4 contactColumn">
+                    <i class="fa-regular fa-envelope fa-4x"></i>
+                    <h3>Adresse email</h3>
+                    <p>zulalakbulut2616@gmail.com</p>
+                </div>
+                <div class="col-lg-4 mt-4 contactColumn">
+                    <i class="fa-brands fa-linkedin-in fa-4x"></i>
+                    <h3>LinkedIn</h3>
+                    <p>www.linkedin.com/in/zulal-akbulut-qa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
