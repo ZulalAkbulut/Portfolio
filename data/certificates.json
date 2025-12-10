@@ -1,0 +1,27 @@
+[
+  {
+    "image": "cer1.webp",
+    "pdf": "cer1.pdf",
+    "alt": "Certificat 1"
+  },
+  {
+    "image": "cer2.webp",
+    "pdf": "cer2.pdf",
+    "alt": "Certificat 2"
+  },
+  {
+    "image": "cer3.webp",
+    "pdf": "cer3.pdf",
+    "alt": "Certificat 3"
+  },
+  {
+    "image": "cer4.webp",
+    "pdf": "cer4.pdf",
+    "alt": "Certificat 4"
+  },
+  {
+    "image": "cer6.webp",
+    "pdf": "istqb-foundation-level-_ctfl.pdf",
+    "alt": "Certificat 5"
+  }
+]

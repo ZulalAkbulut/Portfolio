@@ -236,7 +236,7 @@ body.dark-mode #portfolio .card-text {
 
 .flip-card {
     background-color: transparent;
-    height: 350px;
+    height: 250px;
     width: 100%;
     perspective: 1000px;
     position: relative;
@@ -275,7 +275,7 @@ body.dark-mode #portfolio .card-text {
 
 .flip-front img {
     width: 100%;
-    height: 190px;
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
     border-bottom: 3px solid #1a1f5c; 
@@ -294,13 +294,17 @@ body.dark-mode #portfolio .card-text {
 }
 
 .flip-back p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .flip-back img {
     height: 220px;
     object-fit: cover;
     border-radius: 6px;
+}
+
+#portfolio h3{
+    font-size: 18px;
 }
 
 /* portfolio cards equal height */
@@ -588,4 +592,8 @@ body.dark-mode .step-card p {
 .retour:hover {
     color: whitesmoke !important;
     text-decoration: none;
+}
+
+body.dark-mode ul li {
+    color: #ddd;
 }

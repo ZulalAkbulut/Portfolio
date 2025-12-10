@@ -1,42 +1,42 @@
 [
     {
-        "image": "html-css.jpg",
+        "image": "html-css.webp",
         "title": "HTML - CSS"
     },
     {
-        "image": "js.jpg",
+        "image": "js.webp",
         "title": "javascript"
     },
     {
-        "image": "react.jpg",
+        "image": "react.webp",
         "title": "React"
     },
     {
-        "image": "vsCode.jpg",
+        "image": "vsCode.webp",
         "title": "Visuel Studio Code"
     },
     {
-        "image": "figma.png",
+        "image": "figma.webp",
         "title": "Figma (Lecture de maquettes)"
     },
     {
-        "image": "gestion-de-projet.png",
+        "image": "gestion-de-projet.webp",
         "title": "Gestion de projet"
     },
     {
-        "image": "docker.png",
+        "image": "docker.webp",
         "title": "Docker (Exécution des projets)"
     },
      {
-        "image": "cypress.png",
+        "image": "cypress.webp",
         "title": "Cypress (E2E Testing)"
     },
     {
-        "image": "optimisation-et-debug.png",
+        "image": "optimisation-et-debug.webp",
         "title": "Optimisation et debug"
     },
     {
-        "image": "test.png",
+        "image": "test.webp",
         "title": "Test"
     }
 ]

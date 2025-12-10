@@ -2,17 +2,36 @@
 <html lang="fr">
 
 <head>
-    <title>Portfolio Name</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- linking css file -->
+
+    <!-- SEO -->
+    <title>Portfolio – Zulal Akbulut | Testeuse Logiciel</title>
+    <meta name="description"
+        content="Portfolio de Zulal Akbulut, Testeuse Logiciel passionnée : tests manuels, automatisés, QA, analyses, projets, compétences et certificats.">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="images/image.webp" as="image">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" async>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap CSS (deferable via media trick) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" media="print"
+        onload="this.media='all'">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print"
+        onload="this.media='all'">
+
+    <!-- JS Scripts -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -68,7 +87,7 @@
         <div class="stars"></div>
         <div class="hero-container">
             <div class="hero-image">
-                <img src="images/image.jpg" class="imageAboutPage" alt="Photo de profil" loading="lazy">
+                <img src="images/image.webp" class="imageAboutPage" alt="Photo de profil" loading="lazy">
             </div>
             <div class="hero-text">
                 <h1 class="hero_title">
@@ -136,44 +155,16 @@
         </div>
     </section>
 
-    <!-- certificats section-->
+    <!-- certificats section -->
     <section id="certificats">
         <div class="container">
             <h2 class="text-center">Mes Certificats</h2>
-            <div class="certificats-slider">
-                <div class="certificate">
-                    <a href="data/cer1.pdf" target="_blank">
-                        <img src="images/cer1.png" alt="Certificat 1">
-                    </a>
-                    <p><a href="data/cer1.pdf" target="_blank">Voir le PDF</a></p>
-                </div>
-                <div class="certificate">
-                    <a href="data/cer2.pdf" target="_blank">
-                        <img src="images/cer2.png" alt="Certificat 1">
-                    </a>
-                    <p><a href="data/cer2.pdf" target="_blank">Voir le PDF</a></p>
-                </div>
-                <div class="certificate">
-                    <a href="data/cer3.pdf" target="_blank">
-                        <img src="images/cer3.png" alt="Certificat 1">
-                    </a>
-                    <p><a href="data/cer3.pdf" target="_blank">Voir le PDF</a></p>
-                </div>
-                <div class="certificate">
-                    <a href="data/cer4.pdf" target="_blank">
-                        <img src="images/cer4.png" alt="Certificat 1">
-                    </a>
-                    <p><a href="data/cer4.pdf" target="_blank">Voir le PDF</a></p>
-                </div>
-                <div class="certificate">
-                    <a href="data/istqb-foundation-level-_ctfl.pdf" target="_blank">
-                        <img src="images/cer6.png" alt="Certificat 1">
-                    </a>
-                    <p><a href="data/istqb-foundation-level-_ctfl.pdf" target="_blank">Voir le PDF</a></p>
-                </div>
-            </div>
+
+            <div class="certificats-slider" id="certificats-slider"></div>
+
         </div>
     </section>
+
 
     <!-- contact section-->
     <section id="contact">

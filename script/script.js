@@ -22,45 +22,45 @@ function handleNavbarCollapse() {
     });
   });
 }
-const toggleButton = document.getElementById('theme-toggle');
+const toggleButton = document.getElementById("theme-toggle");
 const body = document.body;
-const moonIcon = document.getElementById('icon-moon');
-const sunIcon = document.getElementById('icon-sun');
+const moonIcon = document.getElementById("icon-moon");
+const sunIcon = document.getElementById("icon-sun");
 
-// Başlangıç ay/güneş durumu (LocalStorage varsa onu al)
-if(localStorage.getItem('theme') === 'dark'){
-    body.classList.add('dark-mode');
-    moonIcon.style.display = 'none';
-    sunIcon.style.display = 'block';
+// État initial de la lune/du soleil (récupéré depuis le LocalStorage s'il existe)
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-mode");
+  moonIcon.style.display = "none";
+  sunIcon.style.display = "block";
 } else {
-    body.classList.remove('dark-mode');
-    moonIcon.style.display = 'block';
-    sunIcon.style.display = 'none';
+  body.classList.remove("dark-mode");
+  moonIcon.style.display = "block";
+  sunIcon.style.display = "none";
 }
 
 // Click event
-toggleButton.addEventListener('click', () => {
-    if(body.classList.contains('dark-mode')){
-        // Dark modu kapat
-        body.classList.remove('dark-mode');
-        moonIcon.style.display = 'block';
-        sunIcon.style.display = 'none';
-        localStorage.setItem('theme', 'light');
-    } else {
-        // Dark modu aç
-        body.classList.add('dark-mode');
-        moonIcon.style.display = 'none';
-        sunIcon.style.display = 'block';
-        localStorage.setItem('theme', 'dark');
-    }
+toggleButton.addEventListener("click", () => {
+  if (body.classList.contains("dark-mode")) {
+    // Désactiver le mode sombre
+    body.classList.remove("dark-mode");
+    moonIcon.style.display = "block";
+    sunIcon.style.display = "none";
+    localStorage.setItem("theme", "light");
+  } else {
+    // Activer le mode sombre
+    body.classList.add("dark-mode");
+    moonIcon.style.display = "none";
+    sunIcon.style.display = "block";
+    localStorage.setItem("theme", "dark");
+  }
 });
-
 
 // Function to dynamically create HTML elements from the JSON file
 function createSkillsFromJSON() {
   const container = document.querySelector(".skills-slider");
+  if (!container) return;
 
-  fetch("data/skills.json")
+  fetch("../data/skills.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((item) => {
@@ -77,7 +77,7 @@ function createSkillsFromJSON() {
         container.appendChild(card);
       });
 
-      // Slider otomatik kaydırma
+      // Défilement automatique du slider
       let scrollAmount = 0;
       const slideWidth = container.querySelector(".slide").offsetWidth + 20;
       setInterval(() => {
@@ -96,10 +96,12 @@ function createSkillsFromJSON() {
 // Function to dynamically create HTML elements from the JSON file
 function createPortfolioFromJSON() {
   const container = document.querySelector("#portfolio .container");
+  if (!container) return;
+
   let row = document.createElement("div");
   row.classList.add("row");
 
-  fetch("data/portfolio.json")
+  fetch("../data/portfolio.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((item, index) => {
@@ -107,22 +109,20 @@ function createPortfolioFromJSON() {
         card.classList.add("col-lg-4", "mt-4");
 
         card.innerHTML = `
-                    <div class="flip-card">
-                        <div class="flip-inner">
-                            <!-- FRONT -->
-                            <div class="flip-front">
-                                <img loading="lazy" class="card-img-top" src="images/${item.image}" alt="${item.title}">
-                                <h3 class="card-title mt-3">${item.title}</h3>
-                            </div>
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img loading="lazy" class="card-img-top" src="../images/${item.image}" alt="${item.title}">
+                <h3 class="card-title mt-3">${item.title}</h3>
+              </div>
 
-                            <!-- BACK -->
-                            <div class="flip-back">
-                                <p class="card-text">${item.text}</p>
-                                <a href="${item.link}" class="btn btn-success" target="_blank">En Plus</a>
-                            </div>
-                        </div>
-                    </div>
-                `;
+              <div class="flip-back">
+                <p class="card-text">${item.text}</p>
+                <a href="${item.link}" class="btn btn-success" target="_blank">En Plus</a>
+              </div>
+            </div>
+          </div>
+        `;
 
         row.appendChild(card);
 
@@ -135,9 +135,31 @@ function createPortfolioFromJSON() {
     });
 }
 
+// Function to dynamically create HTML elements from the JSON file
+function createCertificatesFromJSON() {
+  const container = document.querySelector(".certificats-slider");
+  if (!container) return;
+
+  fetch("../data/certificates.json")
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((item) => {
+        const certDiv = document.createElement("div");
+        certDiv.classList.add("certificate");
+        certDiv.innerHTML = `
+          <a href="data/${item.pdf}" target="_blank">
+            <img loading="lazy" src="images/${item.image}" alt="${item.alt}">
+          </a>
+          <p><a href="data/${item.pdf}" target="_blank">Voir le PDF</a></p>
+        `;
+        container.appendChild(certDiv);
+      });
+    });
+}
 
 // Call the functions to execute the code
 handleNavbarScroll();
 handleNavbarCollapse();
 createSkillsFromJSON();
 createPortfolioFromJSON();
+createCertificatesFromJSON();
