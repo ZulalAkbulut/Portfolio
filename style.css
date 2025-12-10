@@ -601,29 +601,21 @@ body.dark-mode ul li {
 @media (max-width: 768px) {
     .hero-container {
         flex-direction: column;
+        /* Resim üstte, yazı altta */
         text-align: center;
-    }
-
-    .hero-text {
-        width: 100%;
-        max-width: 400px;
-        margin-bottom: 70px;
-
-    }
-
-    .hero_title {
-        margin-bottom: -10px;
-        margin-top: -20px;
+        /* Yazıyı ortala */
+        gap: 1rem;
     }
 
     .hero-image img {
         width: 80%;
+        /* Resmin mobilde çok büyük olmaması için */
+        max-width: 300px;
         height: auto;
     }
 
-    .hero-text p.hero_desc {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
+    .hero-text {
+        padding: 0 1rem;
+        /* Yan boşluk ekle */
     }
 }
