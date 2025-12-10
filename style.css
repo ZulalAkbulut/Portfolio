@@ -606,13 +606,21 @@ body.dark-mode ul li {
   }
 
   .hero-image img {
-    width: 80%; 
-    height: auto;
+    max-height: 300px;
+    width: auto;
   }
 
   .hero-text {
-    margin-top: 20px;
-    padding: 0 10px; 
-    font-size: 10px;
+    padding: 0 15px;   
+    text-align: center;
   }
+
+   .hero-text p.hero_desc {
+    word-wrap: break-word;  
+    overflow-wrap: break-word;
+    max-width: 90%;     
+    margin: 0 auto;
+    font-size: 16px; 
+    line-height: 1.4;
+    }
 }
