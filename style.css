@@ -607,11 +607,12 @@ body.dark-mode ul li {
 
   .hero-image img {
     width: 80%; 
-    max-width: 300px;
     height: auto;
   }
 
   .hero-text {
-    padding: 0 1rem;
+    margin-top: 20px;
+    padding: 0 10px; 
+    font-size: 10px;
   }
 }
