@@ -60,7 +60,7 @@ function createSkillsFromJSON() {
   const container = document.querySelector(".skills-slider");
   if (!container) return;
 
-  fetch("../data/skills.json")
+  fetch("data/skills.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((item) => {
@@ -101,7 +101,7 @@ function createPortfolioFromJSON() {
   let row = document.createElement("div");
   row.classList.add("row");
 
-  fetch("../data/portfolio.json")
+  fetch("data/portfolio.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((item, index) => {
@@ -140,7 +140,7 @@ function createCertificatesFromJSON() {
   const container = document.querySelector(".certificats-slider");
   if (!container) return;
 
-  fetch("../data/certificates.json")
+  fetch("data/certificates.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((item) => {
