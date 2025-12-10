@@ -597,3 +597,21 @@ body.dark-mode .step-card p {
 body.dark-mode ul li {
     color: #ddd;
 }
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; 
+    text-align: center; 
+    gap: 1rem;
+  }
+
+  .hero-image img {
+    width: 80%; 
+    max-width: 300px;
+    height: auto;
+  }
+
+  .hero-text {
+    padding: 0 1rem;
+  }
+}
