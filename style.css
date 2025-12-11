@@ -138,6 +138,14 @@ body.dark-mode #portfolio .card-text {
     color: black;
 }
 
+body.dark-mode #about h3 {
+    color: #00FFFF;
+}
+
+body.dark-mode #portfolio h3 {
+    color: white;
+}
+
 /* about */
 .imageAboutPage {
     width: 100%;
@@ -569,6 +577,14 @@ body.dark-mode p {
 
 body.dark-mode .icon-moon svg {
     color: black;
+}
+
+body.dark-mode .project-page h2{
+    color: white;
+}
+
+body.dark-mode .project-page h1{
+     color: #00FFFF;
 }
 
 body.dark-mode .retour {
