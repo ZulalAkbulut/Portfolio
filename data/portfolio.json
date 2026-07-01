@@ -34,5 +34,11 @@
     "title": "Riding Cities – Promotion du skate",
     "text": "Association sportive promouvant le skate en région, avec des cours pour enfants et adultes, et des événements communautaires.",
     "link": "ridingCities.html"
+  },
+  {
+    "image": "sourceCode1.webp",
+    "title": "Playwright E2E Automation Framework",
+    "text": "Framework d’automatisation de tests end-to-end utilisant Playwright pour une application e-commerce. Le projet couvre l’authentification utilisateur, l’ajout de produits au panier, le processus de commande et la validation de la confirmation d’achat.",
+    "link": "sourceCode.html"
   }
 ]
